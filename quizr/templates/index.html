@@ -9,7 +9,6 @@
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.css') }}">
     <!-- Custom styles for this template -->
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='jumbotron-narrow.css') }}">
-    <script src="{{ url_for('static', filename='bootstrap.min.js') }}"></script>
   </head>
   <body>
     <div class="container">
@@ -20,7 +19,7 @@
       <div class="jumbotron">
         <h1>Data Science Quizr</h1>
         <p class="lead">Get your DS quiz fix at home. Your welcome.</p>
-        <p><a class="btn btn-lg btn-success" href="#" role="button">Refresh the list</a></p>
+        <p><a class="btn btn-lg btn-success" href="{{ url_for('index') }}" role="button">Refresh the list</a></p>
       </div>
       {% for item in vocab %}
       <div class="panel panel-default">
@@ -46,5 +45,7 @@
         <p>&copy; 2016 Rosie, Inc.</p>
       </footer>
     </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='bootstrap.js') }}"></script>
   </body>
 </html>

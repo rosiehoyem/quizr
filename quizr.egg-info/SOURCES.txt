@@ -7,6 +7,7 @@ quizr.egg-info/dependency_links.txt
 quizr.egg-info/requires.txt
 quizr.egg-info/top_level.txt
 quizr/static/bootstrap.css
-quizr/static/bootstrap.min.js
+quizr/static/bootstrap.js
+quizr/static/jquery-3.1.1.js
 quizr/static/jumbotron-narrow.css
 quizr/templates/index.html
