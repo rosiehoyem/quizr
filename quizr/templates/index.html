@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Quizr</title>
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='bootstrap.css') }}">
+    <!-- Custom styles for this template -->
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='jumbotron-narrow.css') }}">
+    <script src="{{ url_for('static', filename='bootstrap.min.js') }}"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header clearfix">
+        <h3 class="text-muted">Quizr</h3>
+      </div>
+
+      <div class="jumbotron">
+        <h1>Data Science Quizr</h1>
+        <p class="lead">Get your DS quiz fix at home. Your welcome.</p>
+        <p><a class="btn btn-lg btn-success" href="#" role="button">Refresh the list</a></p>
+      </div>
+      {% for item in vocab %}
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="pull-right">
+            <button class="btn btn-info btn-sm" type="button" data-toggle="collapse" href="#collapseExample{{loop.index0}}" aria-expanded="false" aria-controls="collapseExample">
+              Show Definition
+            </button>
+          </div>
+          <h3 class="panel-title">{{ item.term }}</h3>
+          <br/>
+        </div>
+        <div class="panel-body">
+          <div class="collapse" id="collapseExample{{loop.index0}}">
+            <div class="well">
+              {{ item.definition }}
+            </div>
+          </div>
+        </div>
+      </div> 
+      {% endfor %}
+      <footer class="footer">
+        <p>&copy; 2016 Rosie, Inc.</p>
+      </footer>
+    </div>
+  </body>
+</html>

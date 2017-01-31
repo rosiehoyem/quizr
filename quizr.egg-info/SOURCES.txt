@@ -1,0 +1,12 @@
+MANIFEST.in
+quizr/__init__.py
+quizr/quizr.py
+quizr.egg-info/PKG-INFO
+quizr.egg-info/SOURCES.txt
+quizr.egg-info/dependency_links.txt
+quizr.egg-info/requires.txt
+quizr.egg-info/top_level.txt
+quizr/static/bootstrap.css
+quizr/static/bootstrap.min.js
+quizr/static/jumbotron-narrow.css
+quizr/templates/index.html

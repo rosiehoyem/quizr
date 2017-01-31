@@ -1,0 +1,2 @@
+graft quizr/templates
+graft quizr/static
