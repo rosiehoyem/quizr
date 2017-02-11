@@ -18,7 +18,7 @@
 
       <div class="jumbotron">
         <h1>Data Science Quizr</h1>
-        <p class="lead">Get your DS quiz fix at home. Your welcome.</p>
+        <p class="lead">Get your DS quiz fix at home. You're welcome.</p>
         <p><a class="btn btn-lg btn-success" href="{{ url_for('index') }}" role="button">Refresh the list</a></p>
       </div>
       {% for item in vocab %}
@@ -35,7 +35,7 @@
         <div class="panel-body">
           <div class="collapse" id="collapseExample{{loop.index0}}">
             <div class="well">
-              {{ item.definition }}
+            {{ item.definition }}
             </div>
           </div>
         </div>
