@@ -1,4 +1,6 @@
 Flask==0.12
+gunicorn==19.0.0
 numpy==1.11.3
 pandas==0.19.1
 setuptools==34.1.1
+
